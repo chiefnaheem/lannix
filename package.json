@@ -5,6 +5,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev": "yarn tsc -w & nodemon ./bin/www",
+    "compile": "yarn tsc",
     "test": "jest --runInBand",
     "clean": "rm -rf dist && mkdir dist",
     "heroku-postbuild": "yarn clean && yarn compile"
